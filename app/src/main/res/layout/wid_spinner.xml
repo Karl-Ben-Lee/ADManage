@@ -1,0 +1,12 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_name"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:background="@color/GRAY_LIGHT"
+    android:singleLine="true"
+    android:gravity="center"
+    android:lines="1"
+    android:ellipsize="end"
+    android:textSize="17sp"
+    />
+    <!--如果写成布局文件就会出错-->

@@ -1,0 +1,28 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--登录界面的-->
+    <dimen name="lay_hormargin_input_name">26dp</dimen>
+    <dimen name="lay_topmargin_input_name">200dp</dimen>
+    <dimen name="lay_padd_input_namepass">10dp</dimen>
+    <dimen name="out_leftmargin_input_namepass">5dp</dimen>
+    <dimen name="in_horpadd_input_namepass">20dp</dimen>
+
+    <!--用户管理模块的-->
+    <dimen name="fontsize_usermanage">25dp</dimen>
+    <dimen name="in_padd_but_userma">15dp</dimen>
+    <dimen name="out_margin_but_userma">5dp</dimen>
+    <dimen name="fontsize_userlist">20dp</dimen>
+    <dimen name="ver_padd_list_user">5dp</dimen>
+
+    <!--广告管理模块的-->
+    <dimen name="padd_admanage">3dp</dimen>
+    <dimen name="spinner_movedown">33dp</dimen>
+    <dimen name="spinner_layout_height">35dp</dimen>
+    <dimen name="fontsize_adlist">20dp</dimen>
+    <dimen name="ver_padd_list_adma">5dp</dimen>
+    <dimen name="userma_but_jianju">15dp</dimen>
+
+</resources>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BacBai"
+    tools:context=".adsys.ADManageFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView_adname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="广告名称"
+            app:layout_constraintBottom_toBottomOf="@+id/editText_adname"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/editText_adname"
+            app:layout_constraintWidth_percent="0.2" />
+
+        <EditText
+            android:id="@+id/editText_adname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_input_min"
+            android:layout_marginTop="1dp"
+            android:padding="@dimen/padd_admanage"
+            android:hint="广告名"
+            android:lines="1"
+            android:ellipsize="end"
+            app:layout_constraintStart_toEndOf="@+id/textView_adname"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.3" />
+
+        <TextView
+            android:id="@+id/textView_sourposit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="产权单位"
+            app:layout_constraintBottom_toBottomOf="@+id/editText_adname"
+            app:layout_constraintStart_toEndOf="@+id/editText_adname"
+            app:layout_constraintTop_toTopOf="@+id/editText_adname"
+            app:layout_constraintWidth_percent="0.2" />
+
+        <EditText
+            android:id="@+id/editText_sourposit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_input_min"
+            android:padding="@dimen/padd_admanage"
+            android:hint="产权单位"
+            android:lines="1"
+            android:ellipsize="end"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_sourposit"
+            app:layout_constraintStart_toEndOf="@+id/textView_sourposit"
+            app:layout_constraintTop_toTopOf="@+id/textView_sourposit"
+            app:layout_constraintWidth_percent="0.3" />
+
+        <TextView
+            android:id="@+id/textView_useposit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="使用单位"
+            app:layout_constraintBottom_toBottomOf="@+id/editText_userposit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/editText_userposit"
+            app:layout_constraintWidth_percent="0.2" />
+
+        <EditText
+            android:id="@+id/editText_userposit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_input_min"
+            android:padding="@dimen/padd_admanage"
+            android:hint="使用单位"
+            android:lines="1"
+            android:ellipsize="end"
+            app:layout_constraintStart_toEndOf="@+id/textView_useposit"
+            app:layout_constraintTop_toBottomOf="@+id/editText_adname"
+            app:layout_constraintWidth_percent="0.3" />
+
+        <TextView
+            android:id="@+id/textView_streetname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="街道名称"
+            app:layout_constraintBottom_toBottomOf="@+id/editText_userposit"
+            app:layout_constraintStart_toEndOf="@+id/editText_userposit"
+            app:layout_constraintTop_toTopOf="@+id/editText_userposit"
+            app:layout_constraintWidth_percent="0.2" />
+
+        <EditText
+            android:id="@+id/editText_streetname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_input_min"
+            android:ems="10"
+            android:padding="@dimen/padd_admanage"
+            android:hint="街道名称"
+            android:lines="1"
+            android:ellipsize="end"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_streetname"
+            app:layout_constraintStart_toEndOf="@+id/textView_streetname"
+            app:layout_constraintTop_toTopOf="@+id/textView_streetname"
+            app:layout_constraintWidth_percent="0.3" />
+
+        <TextView
+            android:id="@+id/textView_duedate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="到期时间"
+            app:layout_constraintBottom_toBottomOf="@+id/editText_calendar"
+            app:layout_constraintEnd_toStartOf="@+id/editText_calendar"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/editText_calendar"
+            app:layout_constraintWidth_percent="0.2" />
+
+        <EditText
+            android:id="@+id/editText_calendar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_input_min"
+            android:ems="10"
+            android:hint="请选择"
+            android:lines="1"
+            android:ellipsize="end"
+            android:editable="false"
+            android:inputType="date"
+            android:padding="@dimen/padd_admanage"
+            app:layout_constraintEnd_toStartOf="@+id/textView_feestate"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView_duedate"
+            app:layout_constraintTop_toBottomOf="@+id/editText_userposit"
+            app:layout_constraintWidth_percent="0.3" />
+
+        <TextView
+            android:id="@+id/textView_feestate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="缴费状态"
+            app:layout_constraintBottom_toBottomOf="@+id/editText_calendar"
+            app:layout_constraintEnd_toStartOf="@+id/spinner_feestate"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/editText_calendar"
+            app:layout_constraintTop_toTopOf="@+id/editText_calendar"
+            app:layout_constraintWidth_percent="0.2" />
+
+        <Spinner
+            android:id="@+id/spinner_feestate"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spinner_layout_height"
+            android:background="@drawable/shape_input_min"
+            android:dropDownVerticalOffset="@dimen/spinner_movedown"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_feestate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView_feestate"
+            app:layout_constraintTop_toTopOf="@+id/textView_feestate"
+            app:layout_constraintWidth_percent="0.3" />
+
+        <TextView
+            android:id="@+id/textView_planstate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="规划状态"
+            app:layout_constraintBottom_toBottomOf="@+id/spinner_planstate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/spinner_planstate"
+            app:layout_constraintWidth_percent="0.2" />
+
+        <Spinner
+            android:id="@+id/spinner_planstate"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spinner_layout_height"
+            android:background="@drawable/shape_input_min"
+            android:dropDownVerticalOffset="@dimen/spinner_movedown"
+            app:layout_constraintStart_toEndOf="@+id/textView_planstate"
+            app:layout_constraintTop_toBottomOf="@+id/editText_calendar"
+            app:layout_constraintWidth_percent="0.3" />
+
+        <TextView
+            android:id="@+id/textView_movestate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="拆除状态"
+            app:layout_constraintBottom_toBottomOf="@+id/spinner_planstate"
+            app:layout_constraintStart_toEndOf="@+id/spinner_planstate"
+            app:layout_constraintTop_toTopOf="@+id/spinner_planstate"
+            app:layout_constraintWidth_percent="0.2" />
+
+        <Spinner
+            android:id="@+id/spinner_movestate"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spinner_layout_height"
+            android:background="@drawable/shape_input_min"
+            android:dropDownVerticalOffset="@dimen/spinner_movedown"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_movestate"
+            app:layout_constraintStart_toEndOf="@+id/textView_movestate"
+            app:layout_constraintTop_toTopOf="@+id/textView_movestate"
+            app:layout_constraintWidth_percent="0.3" />
+
+        <Button
+            android:id="@+id/but_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_planstate" />
+
+        <TextView
+            android:id="@+id/listView_adname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_table"
+            android:ellipsize="end"
+            android:gravity="center_vertical|center_horizontal"
+            android:maxEms="5"
+            android:paddingVertical="@dimen/ver_padd_list_adma"
+            android:text="广告牌名称"
+            android:textSize="@dimen/fontsize_adlist"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/but_search"
+            app:layout_constraintWidth_percent="0.4" />
+
+        <TextView
+            android:id="@+id/listView_duetime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintWidth_percent="0.4"
+            android:background="@drawable/shape_table"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingVertical="@dimen/ver_padd_list_adma"
+            android:text="有效截止时间"
+            android:textSize="@dimen/fontsize_adlist"
+            app:layout_constraintBottom_toBottomOf="@+id/listView_adname"
+            app:layout_constraintStart_toEndOf="@+id/listView_adname"
+            app:layout_constraintTop_toTopOf="@+id/listView_adname" />
+
+        <TextView
+            android:id="@+id/listView_feestate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintWidth_percent="0.2"
+            android:background="@drawable/shape_table"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingVertical="@dimen/ver_padd_list_adma"
+            android:text="缴费"
+            android:textSize="@dimen/fontsize_adlist"
+            app:layout_constraintBottom_toBottomOf="@+id/listView_duetime"
+            app:layout_constraintStart_toEndOf="@+id/listView_duetime"
+            app:layout_constraintTop_toTopOf="@+id/listView_duetime" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ListView
+        android:id="@+id/list_ads"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

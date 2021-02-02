@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">ADManage</string>
+
+    <string name="user_name">请输入用户名</string>
+    <string name="user_password">请输入密码</string>
+    <string name="action_sign_in">登录</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="invalid_username">不是有效用户名</string>
+    <string name="invalid_password">密码必须大于3字符</string>
+    <string name="password_inconsist">两次输入密码不一致</string>
+    <string name="login_failed">"密码错误"</string>
+    <string name="conn_failed">"请求不到服务器，请检查配置"</string>
+
+    <string name="invalid_adname">不是有效广告牌名</string>
+    <string name="invalid_position">不是有效单位</string>
+    <string name="invalid_streetname">不是有效街道名</string>
+    <string name="invalid_date">时间格式不对</string>
+    <string name="invalid_adcontent">广告内容不能包含尖括号</string>
+    <string name="invalid_phonenum">不是有效手机号</string>
+    <string name="invalid_personname">不是有效人名</string>
+    <string name="invalid_size">尺寸格式不正确</string>
+    <string name="invalid_jingdu">纬度必须在-90.0~90.0之间</string>
+    <string name="invalid_jingweidu">纬度必须在-180.0~180.0之间</string>
+    <string name="invalid_stander">不是有效规格</string>
+
+    <string name="search_failed">"搜索失败"</string>
+    <string name="ad_modify_failed">"广告修改失败"</string>
+    <string name="ad_add_failed">"广告添加失败"</string>
+    <string name="ad_delete_failed">"广告删除失败"</string>
+    <string name="user_modify_failed">"用户修改失败"</string>
+    <string name="user_add_failed">"用户添加失败"</string>
+    <string name="user_delete_failed">"用户删除失败"</string>
+
+    <string name="title_ad_statistic">广告统计</string>
+    <string name="title_ad_manage">广告管理</string>
+    <string name="title_user_manage">用户管理</string>
+    <string name="text_usermanage_common">普通用户管理</string>
+    <string name="text_usermanage_self">修改个人信息</string>
+    <string name="text_usermanage_exit">注销登录</string>
+</resources>

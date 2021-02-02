@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BacBai"
+    tools:context=".adsys.UserManageFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/but_usermanage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_input_min"
+                android:gravity="left|center_vertical"
+                android:layout_marginTop="1dp"
+                android:padding="@dimen/in_padd_but_userma"
+                android:text="@string/text_usermanage_common"
+                android:textSize="@dimen/fontsize_usermanage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/but_altermymes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_input_min"
+                android:layout_marginTop="@dimen/userma_but_jianju"
+                android:gravity="left|center_vertical"
+                android:padding="@dimen/in_padd_but_userma"
+                android:text="@string/text_usermanage_self"
+                android:textSize="@dimen/fontsize_usermanage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/but_usermanage" />
+
+            <Button
+                android:id="@+id/but_logout"
+                android:layout_marginTop="@dimen/userma_but_jianju"
+                android:layout_width="match_parent"
+                android:background="@drawable/shape_input_min"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:padding="@dimen/in_padd_but_userma"
+                android:text="@string/text_usermanage_exit"
+                android:textSize="@dimen/fontsize_usermanage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/but_altermymes" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BacBai"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="ip"
+        app:layout_constraintBottom_toBottomOf="@+id/editText_ip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editText_ip"
+        app:layout_constraintWidth_percent="0.3" />
+
+    <EditText
+        android:id="@+id/editText_ip"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:selectAllOnFocus="true"
+        android:hint="输入域名或局域网中web服务器的IP地址"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/textView_id"
+        app:layout_constraintWidth_percent="0.7" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="端口"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/editText_port"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editText_port"
+        app:layout_constraintWidth_percent="0.3" />
+
+    <EditText
+        android:id="@+id/editText_port"
+        android:layout_width="0dp"
+        android:hint="输入服务器上web程序的访问端口"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView27"
+        app:layout_constraintTop_toBottomOf="@+id/editText_ip"
+        app:layout_constraintWidth_percent="0.7" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="地图缩放等级"
+        app:layout_constraintBottom_toBottomOf="@+id/editText_paintlevel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editText_paintlevel"
+        app:layout_constraintWidth_percent="0.3" />
+
+    <EditText
+        android:id="@+id/editText_paintlevel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="输入数字"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/textView32"
+        app:layout_constraintTop_toBottomOf="@+id/editText_port"
+        app:layout_constraintWidth_percent="0.7" />
+
+    <Button
+        android:id="@+id/but_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保存"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_paintlevel"
+        app:layout_constraintVertical_bias="0.13" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
